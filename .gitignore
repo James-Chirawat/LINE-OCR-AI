@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.vercel/
+.netlify/
+.env*
+!.env.example
+models/*
+!models/.gitkeep
+*.log
+.DS_Store
+tests/reference/.venv/
+tests/reference/__pycache__/
+test-results/
