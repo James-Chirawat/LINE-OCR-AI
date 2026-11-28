@@ -4,14 +4,9 @@
 
 โปรเจกต์ใช้ Next.js App Router และ JavaScript ES Modules โดยนำ LINE stateless token, OCR บน CPU, การเตรียมภาพ และการเรนเดอร์ PDF มาจาก [Linebot-OCR](https://github.com/James-Chirawat/Linebot-OCR/tree/f087da1a43316ae817b6aee5928dc5a16c7dead1)
 
-```text
-ข้อความ LINE ───────────────────┐
-ภาพ / PDF ── OpenThai OCR ──────┴─ Gemini JSON → Zod → PendingTransactions
-                                                             ↓
-                                                LINE Flex → กดยืนยัน
-                                                             ↓
-                                                        Transactions
-```
+## แผนภาพการทำงาน
+
+![แผนภาพ LINE AI Expense Tracker แสดงการรับข้อความและใบเสร็จ การยืนยันก่อนบันทึก และการดูรายงาน](./line-ai-expense-tracker-flow.png)
 
 ## 1. เตรียมเครื่องและบัญชี
 
